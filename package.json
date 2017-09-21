@@ -2,11 +2,12 @@
   "name": "generator-alika",
   "version": "0.0.0",
   "description": "Generates starter projects used in the Alika Analytics tutorials",
-  "homepage": "www.alika.ch",
+  "homepage": "https://github.com/tony-mowers/generator-alika",
+  "bugs": "https://github.com/tony-mowers/generator-alika/issues",
   "author": {
     "name": "Tony Mowers",
     "email": "tony@alika.ch",
-    "url": "www.alika.ch/people/tony-mowers"
+    "url": "https://www.alika.ch/people/tony-mowers"
   },
   "files": [
     "generators"
@@ -45,6 +46,9 @@
       "node": true
     }
   },
-  "repository": "tony-mowers/generator-alika",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tony-mowers/generator-alika.git"
+  },
   "license": "MIT"
 }
