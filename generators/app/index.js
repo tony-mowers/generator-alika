@@ -22,7 +22,6 @@ module.exports = class extends Generator {
   //     this.props = props;
   //   });
   // }
-
   writing() {
     this.fs.copy(
       this.templatePath('app/index.html'),
