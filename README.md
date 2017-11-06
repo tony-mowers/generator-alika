@@ -25,7 +25,7 @@ yo alika
 
 ## License
 
-MIT © [Tony Mowers](www.alika.ch/people/tony-mowers)
+MIT © [Tony Mowers](http://www.alika.ch/people/tony-mowers)
 
 
 [npm-image]: https://badge.fury.io/js/generator-alika.svg
