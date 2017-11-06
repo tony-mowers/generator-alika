@@ -29,12 +29,24 @@ module.exports = class extends Generator {
       this.destinationPath('app/index.html')
     );
     this.fs.copy(
-      this.templatePath('app/styles/main.scss'),
-      this.destinationPath('app/styles/main.scss')
+      this.templatePath('app/style/main.scss'),
+      this.destinationPath('app/style/main.scss')
+    );
+    this.fs.copy(
+      this.templatePath('app/js/main.js'),
+      this.destinationPath('app/js/main.js')
     );
     this.fs.copy(
       this.templatePath('package.json'),
       this.destinationPath('package.json')
+    );
+    this.fs.copy(
+      this.templatePath('app.config.js'),
+      this.destinationPath('app.config.js')
+    );
+    this.fs.copy(
+      this.templatePath('webpack.config.js'),
+      this.destinationPath('webpack.config.js')
     );
     this.fs.copy(
       this.templatePath('gulpfile.js'),

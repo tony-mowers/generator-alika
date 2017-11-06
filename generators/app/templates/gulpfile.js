@@ -6,60 +6,56 @@ const cssnano = require('cssnano');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const plumber = require('gulp-plumber');
-const runSequence = require('run-sequence');
+const webpack = require('webpack-stream');
 const reload = browserSync.reload;
 
-const config = {
-    src : {
-      scss: "app/styles/**/*.scss"
-    },
+const config = require('./app.config');
 
-    dest: {
-      css: "app/styles"
-    }
-};
-
-gulp.task('styles', function() {
+gulp.task('build:styles', function() {
   var plugins = [
     autoprefixer({browsers: ['last 2 version']}),
     cssnano()
   ];
-  return gulp.src(config.src.scss)
+  return gulp.src(config.scss.src)
     .pipe(plumber())
     .pipe(sourcemaps.init())
-    .pipe(sass.sync({
-      outputStyle: 'expanded',
-      precision: 10,
-      includePaths: ['.']
-    }).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(postcss(plugins))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(config.dest.css))
+    .pipe(gulp.dest(config.scss.dest))
     .pipe(plumber.stop())
     .pipe(reload({
       stream: true
     }))
 });
 
-
-gulp.task('serve', () => {
-  runSequence(['build'], () => {
-    browserSync.init({
-      notify: false,
-      port: 9000,
-      server: {
-        baseDir: ['app']
-      }
-    });
-
-    gulp.watch([
-      'app/*.html',
-      'app/images/**/*',
-      'app/fonts/**/*'
-    ]).on('change', reload);
-
-    gulp.watch(config.src.scss, ['styles']);
-  });
+gulp.task('build:scripts', function() {
+  return gulp.src('./app/js/index.js')
+    .pipe(plumber())
+    .pipe(webpack(require('./webpack.config.js')))
+    .pipe(gulp.dest('./app/js'))
+    .pipe(plumber.stop())
+    .pipe(reload({
+      stream: true
+    }))
 });
 
-gulp.task('build',['styles']);
+gulp.task('build',['build:styles','build:scripts']);
+
+function watch() {
+  gulp.watch(config.scss.src,['build:styles']);
+  gulp.watch(config.html.src, reload);
+  gulp.watch(config.js.src, ['build:scripts']);
+}
+
+gulp.task('serve', ['build'], function() {
+  browserSync.init({
+    port: 9000,
+    server: {
+     baseDir: config.distDir
+    }
+  })
+  watch();
+});
+
+gulp.task('default',['serve']);
