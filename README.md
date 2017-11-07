@@ -20,7 +20,7 @@ Then generate your new project and launch a webserver:
 mkdir <projectname>
 cd <projectname>
 yo alika
-gulp
+node_modules/.bin/gulp
 ```
 
 After the webserver has started your default web browser should launch and load the home page of the sample project. Start playing by editing ES6 Javascript and SCSS stylesheets in the project. Your browser will refresh automatically as you save your changes.
