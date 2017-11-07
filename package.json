@@ -1,7 +1,7 @@
 {
   "name": "generator-alika",
-  "version": "0.1.5",
-  "description": "Generates starter projects used in the Alika Analytics tutorials",
+  "version": "0.1.6",
+  "description": "Generates getting started projects which are used as teaching examples in tutorials.",
   "homepage": "https://github.com/tony-mowers/generator-alika",
   "bugs": "https://github.com/tony-mowers/generator-alika/issues",
   "author": {
