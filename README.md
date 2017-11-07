@@ -23,7 +23,7 @@ yo alika
 gulp
 ```
 
-After your webserver has started you can load the website into your browser and start playing with ES6 Javascript and SCSS stylesheets. Your browser will refresh automatically as you make changes.
+After the webserver has started your default web browser should launch and load the home page of the sample project. Start playing with ES6 Javascript and SCSS stylesheets by editing the files in the project. Your browser will refresh automatically as you save your changes.
 
 ## Getting To Know Alika
 
