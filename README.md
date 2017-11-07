@@ -1,7 +1,7 @@
 # generator-alika [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Generates starter projects used in tutorials as teaching examples and starter projects for learning. It aims to create project structures, with build facilites, which are as simple as possible while still statisfying the teaching goals. 
+> Generates starter projects used in tutorials as teaching examples and starter projects for learning. 
 
-For example, you can easily use it to create a project for experimenting with using browser based Javascript ES6 (with module support) along with SCSS stylesheets. You will be able launch a webserver with one command that will automatically update your browser as you experiment with editing Javascript ES6 and SCSS stylesheet files.
+It aims to create project structures, with build facilites, which are as simple as possible while still statisfying the teaching goals. For example, you can easily use it to create a project for experimenting with using browser based Javascript ES6 (with module support) along with SCSS stylesheets. You will be able launch a webserver with one command that will automatically update your browser as you experiment with editing Javascript ES6 and SCSS stylesheet files.
 
 ## Installation
 
@@ -12,21 +12,16 @@ npm install -g yo
 npm install -g generator-alika
 ```
 
-Then generate your new project:
+Then generate your new project and launch a webserver:
 
 ```bash
-mkdir website
-cd website
+mkdir <dirname>
+cd <dirname>
 yo alika
-```
-
-Launch your webserver:
-
-```bash
 gulp
 ```
 
-Load the website into your browser and start playing with ES6 Javascript and SCSS stylesheets.
+After your webserver has started you can load the website into your browser and start playing with ES6 Javascript and SCSS stylesheets. Your browser will refresh automatically as you make changes.
 
 ## Getting To Know Alika
 
