@@ -1,5 +1,7 @@
 # generator-alika [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Generates starter projects used in the Alika Analytics tutorials
+> Generates starter projects used in tutorials as teaching examples and starter projects for learning. It aims to create project structures, with build facilites, which are as simple as possible while still statisfying the teaching goals. 
+
+For example, you can easily use it to create a project for experimenting with using browser based Javascript ES6 (with module support) along with SCSS stylesheets. You will be able launch a webserver with one command that will automatically update your browser as you experiment with editing Javascript ES6 and SCSS stylesheet files.
 
 ## Installation
 
@@ -13,15 +15,22 @@ npm install -g generator-alika
 Then generate your new project:
 
 ```bash
+mkdir website
+cd website
 yo alika
 ```
 
-## Getting To Know Yeoman
+Launch your webserver:
 
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+```bash
+gulp
+```
+
+Load the website into your browser and start playing with ES6 Javascript and SCSS stylesheets.
+
+## Getting To Know Alika
+
+ Feel free to [learn more about Alika tutorials](http://www.alika.ch/tutorials).
 
 ## License
 
