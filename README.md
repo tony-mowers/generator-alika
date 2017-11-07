@@ -3,7 +3,7 @@
 
 It aims to create project structures, with build facilities, which are as simple as possible for statisfying the teaching goals of the tutorials. 
 
-For example, you can easily use it to create a project for experimenting with using browser based ES6 Javascript (i.e. module support, javascript bundles and classes, etc) along with SCSS stylesheets. You will be able launch a webserver with one command that will automatically refresh your browser as you experiment with editing Javascript ES6 files and SCSS stylesheet files.  
+For example, you can easily use it to create a project for experimenting with using browser based ES6 Javascript (i.e. module support, javascript bundles and classes, etc) along with SCSS stylesheets. You will be able to launch a webserver with one command that will automatically refresh your browser as you experiment with editing Javascript ES6 files and SCSS stylesheet files.  
 
 ## Installation
 
