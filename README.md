@@ -1,9 +1,9 @@
 # generator-alika [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Generates starter projects used in tutorials as teaching examples and starter projects for learning. 
+> Generates getting started projects which are used in tutorials as teaching examples and easy starter projects. 
 
 It aims to create project structures, with build facilities, which are as simple as possible for statisfying the teaching goals of the tutorials. 
 
-For example, you can easily use it to create a project for experimenting with using browser based ES6 Javascript (i.e. module support and classes, etc) along with SCSS stylesheets. You will be able launch a webserver with one command that will automatically refresh your browser as you experiment with editing Javascript ES6 and SCSS stylesheet files.  Use the accompaning gulpfile as a starting point for your own projects.
+For example, you can easily use it to create a project for experimenting with using browser based ES6 Javascript (i.e. module support, javascript bundles and classes, etc) along with SCSS stylesheets. You will be able launch a webserver with one command that will automatically refresh your browser as you experiment with editing Javascript ES6 files and SCSS stylesheet files.  
 
 ## Installation
 
