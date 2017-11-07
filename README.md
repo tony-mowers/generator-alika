@@ -1,5 +1,5 @@
 # generator-alika [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Generates getting started projects which are used in tutorials as teaching examples and easy starter projects. 
+> Generates getting started projects which are used as teaching examples and in tutorials.
 
 It aims to create project structures, with build facilities, which are as simple as possible for statisfying the teaching goals of the tutorials. 
 
@@ -23,7 +23,7 @@ yo alika
 gulp
 ```
 
-After the webserver has started your default web browser should launch and load the home page of the sample project. Start playing with ES6 Javascript and SCSS stylesheets by editing the files in the project. Your browser will refresh automatically as you save your changes.
+After the webserver has started your default web browser should launch and load the home page of the sample project. Start playing by editing ES6 Javascript and SCSS stylesheets in the project. Your browser will refresh automatically as you save your changes.
 
 ## Getting To Know Alika
 
