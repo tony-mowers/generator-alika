@@ -25,7 +25,7 @@ After your webserver has started you can load the website into your browser and 
 
 ## Getting To Know Alika
 
- Feel free to [learn more about Alika tutorials](http://www.alika.ch/tutorials).
+ Feel free to [check out the Alika Analytics tutorials](http://www.alika.ch/tutorials).
 
 ## License
 
