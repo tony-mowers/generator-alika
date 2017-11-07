@@ -1,6 +1,6 @@
 {
   "name": "generator-alika",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Generates getting started projects which are used as teaching examples in tutorials.",
   "homepage": "https://github.com/tony-mowers/generator-alika",
   "bugs": "https://github.com/tony-mowers/generator-alika/issues",
